@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/echange-rates-react/static/css/main.5ec85454.css",
+    "main.js": "/echange-rates-react/static/js/main.dfca238b.js",
+    "index.html": "/echange-rates-react/index.html",
+    "main.5ec85454.css.map": "/echange-rates-react/static/css/main.5ec85454.css.map",
+    "main.dfca238b.js.map": "/echange-rates-react/static/js/main.dfca238b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ec85454.css",
+    "static/js/main.dfca238b.js"
+  ]
+}
