@@ -5,6 +5,7 @@ import styles from "./Table.module.scss"
 import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
 import {daily, tenDays} from "../Api/Api";
+import Spinner from "./spinner/Spinner";
 
 const Table = () => {
     const [firstRow, setFirstRow] = useState()
@@ -28,19 +29,22 @@ const Table = () => {
     }
 
     const data = useSelector(state => state.valuate);
+
     const rates = data.data
 
     return (
         <div className={styles.table}>
             <TableHeader/>
-            {(data.status === 'resolved')&&
-                Object.keys(rates).map((element) => (
+
+            {(data.status === 'resolved')
+                ? (Object.keys(rates).map((element) => (
                 <TableRow
                     key={element}
                     ratesRow={rates[element]}
                     clickHandler={clickHandler}
                     feature={firstRow}
-                />))}
+                />)))
+                : <Spinner/>}
         </div>
     );
 };

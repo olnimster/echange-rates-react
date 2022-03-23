@@ -3,4 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     height: 25px;
+    cursor: pointer;
+}
+.table_row :hover{
+    background-color: #9dc6e8
 }
